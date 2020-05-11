@@ -7,7 +7,7 @@ var toBuffer = require('to-buffer')
 var crypto = require('crypto')
 var lpmessage = require('length-prefixed-message')
 var connections = require('connections')
-var debug = require('debug')('discovery-swarm')
+var debug = console.log//require('debug')('discovery-swarm')
 
 try {
   var utp = require('utp-native')
